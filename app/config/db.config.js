@@ -14,6 +14,7 @@ development: {
 },
 production: {
  HOST: "ec2-34-233-114-40.compute-1.amazonaws.com",
+ dialect: "postgres",
  DB: "d56ah1es5shct9",
  USER: "wlxblxmtviynbz",
  PASSWORD: "b0643dc4a292fd9acd24862aee5187a4fbdfb94085724a134dccd23600e4c30f",
