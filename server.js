@@ -4,8 +4,11 @@ const cors = require("cors");
 
 const app = express();
 
+var env = process.env.NODE_ENV || 'development';
+const dbConfig = require("./app/config/db.config.js")[env];
+const devconfig = dbConfig !== 'production'
 var corsOptions = {
-  origin: "http://localhost:3000"
+  origin: devconfig ? "http://localhost:3000" : "http://task-lists-app.herokuapp.com"
 };
 
 
